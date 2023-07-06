@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="906ab0ce973321101613732e6253af86" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="Test" max_length="100" name="test" type="string"/>
+        <element label="test2" max_length="40" name="test2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Choice test" mandatory="true" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="test1" sequence="0" value="tes1"/>
+                <element inactive_on_update="false" label="test2" sequence="1" value="tes2"/>
+                <element inactive_on_update="false" label="test3" sequence="2" value="tes3"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="New Reference" mandatory="true" max_length="32" name="u_reference_1" reference="sys_user" type="reference"/>
+    </element>
+</database>
